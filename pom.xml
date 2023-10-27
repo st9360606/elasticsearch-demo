@@ -40,6 +40,13 @@
             </exclusions>
         </dependency>
 
+        <!-- ES驅動包，須付費白金功能才能使用-->
+        <dependency>
+            <groupId>org.elasticsearch.plugin</groupId>
+            <artifactId>x-pack-sql-jdbc</artifactId>
+            <version>7.3.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
@@ -47,5 +54,13 @@
         </dependency>
 
     </dependencies>
+
+    <!-- 若下載不了ES驅動包 加這個倉庫-->
+    <repositories>
+        <repository>
+            <id>elastic.co</id>
+            <url>https://artifacts.elastic.co/maven</url>
+        </repository>
+    </repositories>
 
 </project>
